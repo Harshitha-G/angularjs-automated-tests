@@ -19,6 +19,15 @@
           controllerAs: 'vm',
           title: 'Inicial'
         }
+      },
+      {
+        url: '/filter.html',
+        config: {
+          templateUrl: 'app/my-module/filter.html',
+          controller: 'Filter',
+          controllerAs: 'vm',
+          title: 'Filtro'
+        }
       }
     ];
   }

@@ -3,10 +3,22 @@
   
   angular
     .module('app.my-module')
-    .controller('Index', Index);
+    .controller('Index', Index)
+    .controller('Filter', Filter);
 
   function Index() {
     var vm = this;
+  }
+  
+  function Filter() {
+    var vm = this;
+    
+    vm.nomes = [
+      'Zé',
+      'Victor Miguez',
+      'Jô',
+      'Gabriel Ribeiro'
+    ]
   }
 
 }());
