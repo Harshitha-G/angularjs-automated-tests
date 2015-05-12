@@ -1,4 +1,4 @@
-describe('filtros', function() {
+describe('my-module.filters', function() {
 	var filter;
 	
 	beforeEach(function() {
@@ -11,7 +11,7 @@ describe('filtros', function() {
 		
 	});
 
-	describe('Filtro de nome completo', function() {
+	describe('filtro de nome completo', function() {
 		
 		it('deve retornar dois resultados', function () {
 			

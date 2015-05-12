@@ -6,7 +6,7 @@
     .controller('Index', Index)
     .controller('Filter', Filter);
 
-  function Index() {
+  function Index(myModuleService) {
     var vm = this;
   }
   

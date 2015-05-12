@@ -15,7 +15,7 @@ karma start
 ```
 npm install -g browser-sync
 
-browser-sync start --server --files
+browser-sync start --server
 ```
 
 go to: http://localhost:3000/src/index.html
