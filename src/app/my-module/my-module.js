@@ -8,12 +8,18 @@
 
   function Index(myModuleService) {
     var vm = this;
+    
+    vm.reclamacao = {};
+    
+    myModuleService.obterPorId(299).then(function(response) {
+      vm.reclamacao = response.data;
+    });
   }
   
   function Filter() {
-    var vm = this;
+      var vm = this;
     
-    vm.nomes = [
+      vm.nomes = [
       'Zé',
       'Victor Miguez',
       'Jô',
