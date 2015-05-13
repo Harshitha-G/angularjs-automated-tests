@@ -37,6 +37,15 @@
           controllerAs: 'vm',
           title: 'Promise'
         }
+      },
+      {
+        url: '/directive.html',
+        config: {
+          templateUrl: 'app/my-module/directive.html',
+          controller: 'Directive',
+          controllerAs: 'vm',
+          title: 'Directive'
+        }
       }
     ];
   }

@@ -5,7 +5,8 @@
     .module('app.my-module')
     .controller('Index', Index)
     .controller('Filter', Filter)
-    .controller('Promise', Promise);
+    .controller('Promise', Promise)
+    .controller('Directive', Directive);
 
   function Index() {
     var vm = this;
@@ -28,6 +29,10 @@
     myModuleService.obterPorId(299).then(function(response) {
       vm.reclamacao = response.data;
     });
+  }
+  
+  function Directive() {
+    var vm = this;
   }
 
 }());

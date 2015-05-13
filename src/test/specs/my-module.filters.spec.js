@@ -1,5 +1,5 @@
 describe('my-module.filters', function() {
-	var filter;
+	var compiple;
 	
 	beforeEach(function() {
 		
