@@ -4,16 +4,11 @@
   angular
     .module('app.my-module')
     .controller('Index', Index)
-    .controller('Filter', Filter);
+    .controller('Filter', Filter)
+    .controller('Promise', Promise);
 
-  function Index(myModuleService) {
+  function Index() {
     var vm = this;
-    
-    vm.reclamacao = {};
-    
-    myModuleService.obterPorId(299).then(function(response) {
-      vm.reclamacao = response.data;
-    });
   }
   
   function Filter() {
@@ -25,6 +20,14 @@
       'Jô',
       'Gabriel Ribeiro'
     ]
+  }
+  
+  function Promise(myModuleService) {
+    var vm = this;
+    
+    myModuleService.obterPorId(299).then(function(response) {
+      vm.reclamacao = response.data;
+    });
   }
 
 }());

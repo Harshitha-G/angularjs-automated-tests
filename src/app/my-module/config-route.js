@@ -28,6 +28,15 @@
           controllerAs: 'vm',
           title: 'Filtro'
         }
+      },
+      {
+        url: '/promise.html',
+        config: {
+          templateUrl: 'app/my-module/promise.html',
+          controller: 'Promise',
+          controllerAs: 'vm',
+          title: 'Promise'
+        }
       }
     ];
   }
