@@ -10,7 +10,7 @@ npm install -g karma-cli
 karma start
 ```
 
-### run e2e tests (karma)
+### run e2e tests (protractor)
 
 ```
 npm install -g protractor
