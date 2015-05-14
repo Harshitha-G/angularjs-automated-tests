@@ -20,3 +20,38 @@ describe('Navegação', function(done) {
     
   });
 });
+
+describe('Form', function(done) {
+  it('formulário preenchido corretamente deve ser enviado', function() {
+    browser.get('#/form.html');
+    
+    var elNome = element(by.id('nome'));
+    var elEmail = element(by.id('email'));
+    var elSubmit = element(by.id('enviar'));
+    var elMensagemSucesso = element(by.id('mensagem-sucesso'));
+    
+    elNome.sendKeys('Rodolfo Lopes Pereira');
+    elEmail.sendKeys('rod.lps@hotmail.com');
+    
+    elSubmit.click();
+    
+    expect(elMensagemSucesso.getText()).toBe('Boa champz!');
+    
+  });
+  
+  it('formulário sem e-mail não deve ser enviado', function() {
+    browser.get('#/form.html');
+    
+    var elNome = element(by.id('nome'));
+    var elEmail = element(by.id('email'));
+    var elSubmit = element(by.id('enviar'));
+    var elMensagemSucesso = element(by.id('mensagem-sucesso'));
+    
+    elNome.sendKeys('Rodolfo Lopes Pereira');
+    
+    elSubmit.click();
+    
+    expect(element(by.css('.email-required')).isDisplayed()).toBe(true);
+    
+  });
+});

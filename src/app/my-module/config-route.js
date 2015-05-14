@@ -46,6 +46,15 @@
           controllerAs: 'vm',
           title: 'Directive'
         }
+      },
+      {
+        url: '/form.html',
+        config: {
+          templateUrl: 'app/my-module/form.html',
+          controller: 'Form',
+          controllerAs: 'vm',
+          title: 'Form'
+        }
       }
     ];
   }

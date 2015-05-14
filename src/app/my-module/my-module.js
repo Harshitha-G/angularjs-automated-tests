@@ -6,7 +6,8 @@
     .controller('Index', Index)
     .controller('Filter', Filter)
     .controller('Promise', Promise)
-    .controller('Directive', Directive);
+    .controller('Directive', Directive)
+    .controller('Form', Form);
 
   function Index() {
     var vm = this;
@@ -33,6 +34,18 @@
   
   function Directive() {
     var vm = this;
+  }
+  
+  function Form() {
+    var vm = this;
+    
+    vm.enviar = function(ehValido) {
+      
+      if (ehValido) {
+        vm.sucesso = 'Boa champz!';
+      }
+      
+    }
   }
 
 }());
