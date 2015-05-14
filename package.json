@@ -1,7 +1,7 @@
 {
-  "name": "angularjs-unit-tests",
+  "name": "angularjs-automated-tests",
   "version": "0.0.0",
-  "description": "angularjs app with unit tests",
+  "description": "angularjs app with automated tests",
   "author": "rod.lps@hotmail.com",
   "dependencies": {
     "angular": "^1.3.15",
